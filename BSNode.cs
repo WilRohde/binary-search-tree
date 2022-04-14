@@ -1,11 +1,11 @@
 namespace binarysearchtree
 {
 class BSNode {
-        private string mo_NodeValue;
+        private Driver mo_driver;
         private BSNode mo_LeftNode;
         private BSNode mo_RightNode;
 
-        public string nodeValue
+        public Driver driver
         {
             get 
             {
@@ -38,17 +38,17 @@ class BSNode {
                 mo_RightNode = value; 
             }
         }
-        public BSNode(string sValue){
-            mo_NodeValue = sValue;
+        public BSNode(driver dDriver){
+            mo_driver = dDriver;
         }
         
-        public BSNode(string sValue, BSNode bsLeftNode) {
-            mo_NodeValue = sValue;
+        public BSNode(driver dDriver, BSNode bsLeftNode) {
+            mo_driver = dDriver;
             mo_LeftNode = bsLeftNode;
         }
 
-        public dNode(string sValue, BSNode bsLeftNode, BSNode bsRightNode) {
-            mo_NodeValue = sValue;
+        public dNode(driver dDriver, BSNode bsLeftNode, BSNode bsRightNode) {
+            mo_driver = dDriver;
             mo_LeftNode = bsLeftNode;
             mo_RightNode = bsRightNode;
         }
